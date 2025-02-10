@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshat Chauhan | Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+            transition: background-color 0.5s ease;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 30px 20px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #61dafb;
+        }
+        header p {
+            font-size: 1.1em;
+            margin-top: 10px;
+        }
+        header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #61dafb;
+            transition: transform 0.3s ease;
+            margin-top: 15px;
+        }
+        header img:hover {
+            transform: scale(1.1);
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+            gap: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1em;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #61dafb;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-align: center;
+            flex: 1 1 45%;
+            max-width: 150px;
+        }
+        nav a:hover {
+            background-color: #fff;
+            color: #121212;
+            transform: scale(1.1);
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2.2em;
+            margin-bottom: 15px;
+            color: #61dafb;
+            text-transform: uppercase;
+        }
+        .description, .education, .projects, .contact {
+            font-size: 1em;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        .description span {
+            font-weight: bold;
+            color: #61dafb;
+        }
+        .education img, .projects img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .social-media {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .social-media img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+        .social-media img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #1a1a1a;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            nav {
+                gap: 5px;
+            }
+            nav a {
+                font-size: 0.9em;
+                padding: 8px 12px;
+                max-width: 130px;
+            }
+            section {
+                padding: 30px 15px;
+            }
+            section h2 {
+                font-size: 1.8em;
+            }
+            .description, .education, .projects, .contact {
+                font-size: 0.9em;
+            }
+            .social-media img {
+                width: 35px;
+                height: 35px;
+            }
+        }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2em;
+            }
+            header img {
+                width: 100px;
+                height: 100px;
+            }
+            nav {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 5px;
+            }
+            nav a {
+                font-size: 0.85em;
+                padding: 7px 10px;
+                max-width: none;
+                width: 100%;
+            }
+            section h2 {
+                font-size: 1.5em;
+            }
+            .description, .education, .projects, .contact {
+                font-size: 0.85em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Akshat Chauhan</h1>
+    <img src="untitled folder/WhatsApp Image 2025-02-10 at 09.36.19.jpeg" alt="Akshat Chauhan">
+    <p>Pursuing B.Tech in CS and AI | Newton School of Technology, Rishihood University</p>
+</header>
+
+<nav>
+    <a href="#description">Introduction</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="description">
+    <h2>Introduction</h2>
+    <p class="description">
+        Hi, I'm <span>Akshat Chauhan</span>, a passionate tech enthusiast currently pursuing a <span>B.Tech in Computer Science and AI</span> at <span>Newton School of Technology, Rishihood University</span>. I have always been fascinated by technology and its ability to solve real-world problems.
+    </p>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <p class="education">
+        Currently, I am pursuing my <span>B.Tech in Computer Science and AI</span> at <span>Newton School of Technology, Rishihood University</span>.
+    </p>
+    <img src="https://www.eduska.com/assets/user_photo/bd3563941129b99009ee16888d4b5678.jpg" alt="Newton School of Technology">
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <p class="projects">
+        I have worked on several projects, including a Python-based <span>"Diabetes Data Representer"</span> to analyze and visualize diabetic data.
+    </p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p class="contact">
+        You can reach out to me via:
+    </p>
+    <div class="social-media">
+        <a href="https://www.linkedin.com/in/akshat-chauhan-8b80262a9/" target="_blank">
+            <img src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw" alt="LinkedIn">
+        </a>
+        <a href="https://www.instagram.com/akshat18710/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
+        </a>
+    </div>
+    <p class="contact">
+        Or, you can email me at: <a href="mailto:akshatchauhan1346@gmail.com" style="color: #61dafb;">akshatchauhan1346@gmail.com</a>
+    </p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Akshat Chauhan. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
